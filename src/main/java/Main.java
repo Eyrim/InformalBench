@@ -1,8 +1,6 @@
 import java.util.List;
 
 public class Main {
-    private static long startMillis;
-
     public static void main(String[] args) {
         Benchmark countTo = Main::countTo;
         Aggregator aggregator = new Aggregator(
