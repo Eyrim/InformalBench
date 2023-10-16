@@ -1,20 +1,12 @@
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Aggregator {
     private final int count;
     private final List<?> args;
     private final Benchmark function;
-//    private final Function<List<?>, Void> function;
 
-    public Aggregator(int count,
-                      List<?> args,
-                      Benchmark function) {
-//                      Function<List<?>, Void> function) {
+    public Aggregator(int count, List<?> args, Benchmark function) {
         this.count = count;
         this.args = args;
         this.function = function;
